@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for Themes 1, 2 & 3*/
+
+/* ### BACKGROUNDS ### */
+
+/* main background */
+.m-bg1 {
+  background: hsl(222, 26%, 31%);
+}
+.m-bg2 {
+  background: hsl(0, 0%, 90%);
+}
+.m-bg3 {
+  background: hsl(268, 75%, 9%);
+}
+
+/* Toggle, keypad Background */
+.t-bg1 {
+  background: hsl(223, 31%, 20%);
+}
+.t-bg2 {
+  background: hsl(0, 5%, 81%);
+}
+.t-bg3 {
+  background: hsl(268, 71%, 12%);
+}
+
+/* screen background */
+.s-bg1 {
+  background: hsl(224, 36%, 15%);
+}
+.s-bg2 {
+  background: hsl(0, 0%, 93%);
+}
+.s-bg3 {
+  background: hsl(268, 71%, 12%);
+}
+
+/* ### KEYS ### */
+
+/* ### Reset and Del Keys### */
+.r-key1 {
+  background: hsl(225, 21%, 49%);
+  box-shadow: hsl(224, 28%, 35%);
+  color: hsl(0, 0, 100%);
+}
+.r-key2 {
+  background: hsl(185, 42%, 37%);
+  box-shadow: hsl(185, 58%, 25%);
+  color: hsl(0, 0, 100%);
+}
+.r-key3 {
+  background: hsl(281, 89%, 26%);
+  box-shadow: hsl(285, 91%, 52%);
+  color: hsl(0, 0, 100%);
+}
+
+/* ###Equals key### */
+.e-key1 {
+  background: hsl(6, 63%, 50%);
+  box-shadow: hsl(6, 70%, 34%);
+  color: hsl(0, 0, 100%);
+}
+.e-key2 {
+  background: hsl(25, 98%, 40%);
+  box-shadow: hsl(25, 99%, 27%);
+  color: hsl(0, 0, 100%);
+}
+.e-key3 {
+  background: hsl(176, 100%, 44%);
+  box-shadow: hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+
+/* ###Number Keys### */
+.n-key1 {
+  background: hsl(30, 25%, 89%);
+  box-shadow: 0px 5px hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+}
+.n-key2 {
+  background: hsl(45, 7%, 89%);
+  box-shadow: 0px 5px hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+.n-key3 {
+  background: hsl(268, 47%, 21%);
+  box-shadow: 0px 5px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+
+/* Toggle Botton */
+.t-key1 {
+  background: hsl(6, 63%, 50%);
+}
+.t-key2 {
+  background: hsl(25, 98%, 40%);
+}
+.t-key3 {
+  background: hsl(176, 100%, 44%);
+}
+
+/* input, disply color */
+.d-color1 {
+  color: hsl(0, 0, 100%);
+  outline: none;
+  border: 0;
+}
+.d-color2 {
+  color: hsl(60, 10%, 19%);
+  outline: none;
+  border: 0;
+}
+.d-color3 {
+  color: hsl(52, 100%, 62%);
+  outline: none;
+  border: 0;
+}
