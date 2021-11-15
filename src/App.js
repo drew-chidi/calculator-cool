@@ -5,7 +5,7 @@ function App() {
   const [theme, setTheme] = useState("1");
 
   // ##Input Display State##
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState("0");
 
   // ##Effect##
   useEffect(() => {
@@ -39,7 +39,8 @@ function App() {
   // ##Calculate##
   const calculateHandler = () => {
     try {
-      setInput(eval(input).toString());
+      // setInput(eval(input).toString());
+      setInput(Function("return " + input)().toString());
     } catch (err) {
       setInput("Error!");
     }
@@ -133,7 +134,7 @@ function App() {
                   : theme === "3"
                   ? "d-color3 s-bg3"
                   : "text-white s-bg1"
-              } text-5xl font-pop font-bold w-full h-20 rounded-xl mb-6 text-right`}
+              } text-5xl font-pop font-bold w-full h-20 rounded-xl mb-6 text-right p-4 xs:p-6`}
             />
 
             {/* Keypad */}

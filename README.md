@@ -48,10 +48,22 @@ Users should be able to:
 ### What I learned
 
 I learned how to use tailwind '@apply' to create custom css.
+The differences between eval() and Function(), and why Function() is better for my evaluate function.
+
+```js
+const calculateHandler = () => {
+  try {
+    // setInput(eval(input).toString());
+    setInput(Function("return " + input)().toString());
+  } catch (err) {
+    setInput("Error!");
+  }
+};
+```
 
 ### Useful resources
 
-- [Tailwind official documentation](https://www.tailwindcss.com) - This helped me in creating custom classes for my different types. I liked that I was able to reduce the utilities classes I would have written on my html tags.
+- [Tailwind official documentation](https://www.tailwindcss.com) - This helped me in creating custom classes for my different groups of html elements. I liked that I was able to reduce the utilities classes I would have written on my html tags.
 
 ## Author
 
