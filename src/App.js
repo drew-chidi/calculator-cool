@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./App.css";
 
 function App() {
   // ##Theme State##
@@ -159,7 +158,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 8
               </button>
@@ -169,7 +168,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 9
               </button>
@@ -179,7 +178,7 @@ function App() {
                 onClick={deleteKeyHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                }  py-2 xs:text-xl text-base font-bold font-pop rounded-lg`}
+                } xs:text-xl text-base font-bold font-pop rounded-lg`}
               >
                 DEL
               </button>
@@ -189,7 +188,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop  rounded-lg`}
+                } font-bold font-pop  rounded-lg`}
               >
                 4
               </button>
@@ -199,7 +198,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop  rounded-lg`}
+                } font-bold font-pop  rounded-lg`}
               >
                 5
               </button>
@@ -209,7 +208,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 6
               </button>
@@ -219,7 +218,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop  rounded-lg`}
+                } font-bold font-pop  rounded-lg`}
               >
                 +
               </button>
@@ -229,7 +228,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop  rounded-lg`}
+                } font-bold font-pop  rounded-lg`}
               >
                 1
               </button>
@@ -239,7 +238,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 2
               </button>
@@ -249,7 +248,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 3
               </button>
@@ -259,7 +258,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 -
               </button>
@@ -269,7 +268,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 .
               </button>
@@ -279,7 +278,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 0
               </button>
@@ -289,7 +288,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 /
               </button>
@@ -299,7 +298,7 @@ function App() {
                 onClick={keyInputHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } py-2 font-bold font-pop rounded-lg`}
+                } font-bold font-pop rounded-lg`}
               >
                 x
               </button>
@@ -307,7 +306,7 @@ function App() {
                 onClick={resetHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } p-2 font-bold font-pop col-span-2 rounded-lg xs:text-xl text-base`}
+                } font-bold font-pop col-span-2 rounded-lg xs:text-xl text-base`}
               >
                 RESET
               </button>
@@ -316,7 +315,7 @@ function App() {
                 onClick={calculateHandler}
                 className={`${
                   theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-                } p-2 font-bold font-pop col-span-2 rounded-lg `}
+                } font-bold font-pop col-span-2 rounded-lg `}
               >
                 =
               </button>
