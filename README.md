@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/drew-chidi/calculator)
+- Solution URL: (https://github.com/drew-chidi/calculator-cool)
 - Live Site URL:(https://calculator-app1eh5.netlify.app/)
 
 ## My process
