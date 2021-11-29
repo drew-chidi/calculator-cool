@@ -59,7 +59,9 @@ function App() {
     setInput("");
     setOperator(e.target.name);
   };
-
+  console.log(memory);
+  console.log(operator);
+  console.log(input);
   // Equals
   const equalsHandler = () => {
     let value = computeHandler();
@@ -69,7 +71,7 @@ function App() {
     setOperator("");
   };
 
-  // Compute Handler
+  // Compute Handlers
   const computeHandler = () => {
     let result;
     let previousNumber = parseFloat(memory);
@@ -172,7 +174,41 @@ function App() {
         <section>
           <div className='flex flex-col w-full '>
             {/* Calculator Display */}
-            <label className='w-full'></label>
+            <div>
+              <label
+                className={`${
+                  theme === "2"
+                    ? "d-color2"
+                    : theme === "3"
+                    ? "d-color3"
+                    : "text-white"
+                } text-xs md:text-base flex w-full justify-end px-1`}
+              >
+                {memory}
+                {operator}
+              </label>
+
+              <input
+                disabled
+                type='text'
+                value={input}
+                className={`${
+                  theme === "2"
+                    ? "d-color2 s-bg2"
+                    : theme === "3"
+                    ? "d-color3 s-bg3"
+                    : "text-white s-bg1"
+                } sm:text-5xl text-3xl font-pop font-bold w-full h-14 sm:h-20 rounded-xl mb-6 text-right p-4 xs:p-6`}
+              />
+            </div>
+            {/* <label className='w-full'>
+              {" "}
+              <p className='text-right'>
+                {memory}
+                {operator}
+              </p>
+            </label>
+
             <input
               disabled
               type='text'
@@ -183,9 +219,8 @@ function App() {
                   : theme === "3"
                   ? "d-color3 s-bg3"
                   : "text-white s-bg1"
-              } text-5xl font-pop font-bold w-full h-20 rounded-xl mb-6 text-right p-4 xs:p-6`}
-            />
-
+              } sm:text-5xl text-3xl font-pop font-bold w-full h-14 sm:h-20 rounded-xl mb-6 text-right p-4 xs:p-6`}
+            /> */}
             {/* Keypad */}
             <div
               className={`${
