@@ -45,13 +45,13 @@
 
 /* ### Reset and Del Keys### */
 .r-key1 {
-  background: hsl(225, 21%, 49%);
   box-shadow: hsl(224, 28%, 35%);
-  color: hsl(0, 0, 100%);
+  background: hsl(225, 21%, 49%);
+  /* color: white; */
 }
 .r-key2 {
-  background: hsl(185, 42%, 37%);
   box-shadow: hsl(185, 58%, 25%);
+  background: hsl(185, 42%, 37%);
   color: hsl(0, 0, 100%);
 }
 .r-key3 {
