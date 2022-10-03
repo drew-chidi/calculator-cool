@@ -1,11 +1,14 @@
 import React from "react";
+import { FormatInput } from "./util/FormatInput";
 
-const CalculatorDisplay = ({ theme, memory, operator, input }) => {
+const CalculatorDisplay = ({ theme, memory, input }) => {
   let value;
   if (memory && input === "") {
     value = memory;
+    value = FormatInput(value);
   } else {
     value = input;
+    value = FormatInput(value);
   }
   return (
     <section>

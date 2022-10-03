@@ -47,11 +47,7 @@ function App() {
 
   // Key Handler
   const setKeyInputHandler = (e) => {
-    // let inputDigit = e;
-    // console.log(inputDigit);
-    // console.log(typeof e);
     if (e === "." && input.includes(".")) return;
-    // console.log(calculated);
     if (calculated) {
       setInput(e);
       setCalculated(false);
@@ -59,9 +55,6 @@ function App() {
       setInput(input.concat(e));
     }
   };
-
-  console.log(input);
-  console.log(typeof input);
 
   // Operator Handler
   const operatorHandler = (e) => {
