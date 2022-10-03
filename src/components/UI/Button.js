@@ -10,6 +10,7 @@ const Button = ({
   operatorHandler,
   equalsHandler,
   resetHandler,
+  idType,
 }) => {
   //  Theme Styles for buttons
   let themeStyle;
@@ -52,6 +53,7 @@ const Button = ({
       setKeyInputHandler(e.target.name);
     }
   };
+
   return (
     <>
       <button
@@ -61,7 +63,7 @@ const Button = ({
         onClick={keyInputHandler}
         className={themeStyle}
       >
-        {name}
+        {idType || name}
       </button>
     </>
   );

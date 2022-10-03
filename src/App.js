@@ -58,7 +58,15 @@ function App() {
 
   // Operator Handler
   const operatorHandler = (e) => {
-    if (input === "") return;
+    if (input === "") {
+      if (e === "-") {
+        console.log(e);
+        setInput(e);
+        return;
+      } else {
+        return;
+      }
+    }
     if (memory !== "") {
       let value = computeHandler();
       setMemory(value);
@@ -233,6 +241,7 @@ function App() {
               />
               <Button
                 id='op'
+                idType='x'
                 input={input}
                 name='*'
                 operatorHandler={operatorHandler}
