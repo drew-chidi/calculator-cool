@@ -83,6 +83,12 @@
   box-shadow: 0px 5px hsl(28, 16%, 65%);
   color: hsl(221, 14%, 31%);
 }
+.n-key1:focus,
+.n-key2:focus,
+.n-key3:focus {
+  opacity: 0.7;
+  background-color: white;
+}
 .n-key2 {
   background: hsl(45, 7%, 89%);
   box-shadow: 0px 5px hsl(35, 11%, 61%);

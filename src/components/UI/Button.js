@@ -32,11 +32,11 @@ const Button = ({
   } else if (name === "=") {
     themeStyle = `${
       theme === "3" ? "e-key3" : theme === "2" ? "e-key2" : "e-key1"
-    } font-bold font-pop col-span-2 rounded-lg `;
+    } font-bold font-pop col-span-2 rounded-lg`;
   } else {
     themeStyle = `${
       theme === "3" ? "n-key3" : theme === "2" ? "n-key2" : "n-key1"
-    }  font-bold font-pop rounded-lg`;
+    }  font-bold font-pop rounded-lg focus:opacity-50 active:opacity-50`;
   }
 
   const keyInputHandler = (e) => {

@@ -47,12 +47,13 @@ function App() {
 
   // Key Handler
   const setKeyInputHandler = (e) => {
-    console.log(typeof e);
+    // let inputDigit = e;
+    // console.log(inputDigit);
+    // console.log(typeof e);
     if (e === "." && input.includes(".")) return;
-    console.log(calculated);
+    // console.log(calculated);
     if (calculated) {
       setInput(e);
-      console.log(typeof e);
       setCalculated(false);
     } else {
       setInput(input.concat(e));
